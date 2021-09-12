@@ -18,8 +18,8 @@ dependencies {
     compileOnly spigot('1.8.8')
     implementation 'com.github.NoSequel:MenuAPI:832c770b4c'
 
-    implementation 'com.github.NoSequel.CommandAPI:shared:2daa0a039c'
-    implementation 'com.github.NoSequel.CommandAPI:bukkit:2daa0a039c'
+    implementation 'com.github.NoSequel.CommandAPI:shared:b47f0ee538'
+    implementation 'com.github.NoSequel.CommandAPI:bukkit:b47f0ee538'
 
     implementation 'com.github.NoSequel.ConfigAPI:shared:f2bb2d6772'
     implementation 'com.github.NoSequel.ConfigAPI:bukkit:f2bb2d6772'

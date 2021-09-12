@@ -57,5 +57,4 @@ public class Warp {
         this.pitch = location.getPitch();
         this.worldName = location.getWorld().getName();
     }
-
 }
