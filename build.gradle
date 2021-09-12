@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+    id 'kr.entree.spigradle' version '2.2.4'
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
+}
+
+group 'io.github.staudlol.warps'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://jitpack.io'
+    }
+}
+
+dependencies {
+    compileOnly spigot('1.8.8')
+    implementation 'com.github.NoSequel:MenuAPI:832c770b4c'
+
+    implementation 'com.github.NoSequel.CommandAPI:shared:2daa0a039c'
+    implementation 'com.github.NoSequel.CommandAPI:bukkit:2daa0a039c'
+
+    implementation 'com.github.NoSequel.ConfigAPI:shared:f2bb2d6772'
+    implementation 'com.github.NoSequel.ConfigAPI:bukkit:f2bb2d6772'
+
+    implementation 'com.github.NoSequel.StorageORM:mongo:fa696f1db4'
+    implementation 'com.github.NoSequel.StorageORM:shared:fa696f1db4'
+
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+}
+
+spigot {
+    authors 'Staud'
+    description =
+            'Warps'
+}
+
+tasks.build.dependsOn(shadowJar)
+tasks.prepareSpigotPlugins.dependsOn(shadowJar)
