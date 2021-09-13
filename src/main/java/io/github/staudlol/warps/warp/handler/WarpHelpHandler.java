@@ -40,7 +40,7 @@ public class WarpHelpHandler extends DefaultBukkitHelpHandler {
      * @return the displayed usage
      */
     private String getUsage(CommandData<?> commandData) {
-        final StringBuilder builder = new StringBuilder("&e/");
+        final StringBuilder builder = new StringBuilder("&a/");
 
         if (commandData instanceof BaseCommandData) {
             final BaseCommandData baseCommandData = (BaseCommandData) commandData;

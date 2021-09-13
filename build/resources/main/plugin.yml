@@ -1,0 +1,4 @@
+name: Warps
+author: Staud
+version: 1.0-SNAPSHOT
+main: io.github.staudlol.warps.WarpsPlugin

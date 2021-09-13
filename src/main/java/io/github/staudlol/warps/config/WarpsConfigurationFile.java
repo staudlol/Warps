@@ -15,11 +15,11 @@ public class WarpsConfigurationFile extends BukkitConfigurationFile {
     @SneakyThrows
     private static File ensureFileExistence(File file) {
         if (!file.getParentFile().exists() && file.getParentFile().mkdirs()) {
-            System.out.println("Creaited parent files.");
+            System.out.println("Created parent files.");
         }
 
         if (!file.exists() && file.createNewFile()) {
-            System.out.println("Creating new configuration with anme \"" + file.getName() + "\"");
+            System.out.println("Creating new configuration with name \"" + file.getName() + "\"");
         }
         return file;
     }
