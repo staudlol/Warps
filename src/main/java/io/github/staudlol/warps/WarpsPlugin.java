@@ -2,6 +2,7 @@ package io.github.staudlol.warps;
 
 import io.github.nosequel.command.CommandHandler;
 import io.github.nosequel.command.bukkit.BukkitCommandHandler;
+import io.github.nosequel.menu.MenuHandler;
 import io.github.staudlol.warps.command.WarpCommands;
 import io.github.staudlol.warps.config.WarpsConfigurationFile;
 import io.github.staudlol.warps.config.impl.WarpMessageConfiguration;
@@ -27,6 +28,8 @@ public class WarpsPlugin extends JavaPlugin {
 
         this.handler.register(new WarpModule());
         this.handler.loadAll();
+
+        new MenuHandler(this);
 
         final CommandHandler commandHandler = new BukkitCommandHandler("warp");
 

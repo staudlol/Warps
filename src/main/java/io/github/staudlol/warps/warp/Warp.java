@@ -8,8 +8,6 @@ import org.bukkit.Location;
 public class Warp {
 
     private final String name;
-    private final Location spawn;
-
     private String worldName;
 
     private int x;
@@ -27,7 +25,11 @@ public class Warp {
 
     public Warp(String name, Location spawn) {
         this.name = name;
-        this.spawn = spawn;
+        this.x = spawn.getBlockX();
+        this.y = spawn.getBlockY();
+        this.z = spawn.getBlockZ();
+        this.yaw = spawn.getYaw();
+        this.pitch = spawn.getPitch();
     }
 
     /**

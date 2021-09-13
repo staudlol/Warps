@@ -57,6 +57,8 @@ public class WarpModule implements Module {
         if (warp == null) {
             throw new IllegalArgumentException("The provided warp to save is null");
         }
+
+        WarpsConstants.WARP_STORAGE.setEntry(warp.getName(), warp);
     }
 
     /**

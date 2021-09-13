@@ -26,6 +26,9 @@ public class WarpMessageConfiguration extends Configuration {
     @Configurable(path = "warp.location")
     public static String WARP_LOCATION = ChatColor.GREEN + "You have updated the location of a warp.";
 
+    @Configurable(path = "warp.teleport")
+    public static String WARP_TELEPORT = ChatColor.GREEN + "You have teleported to the warp.";
+
     @SneakyThrows
     public WarpMessageConfiguration(ConfigurationFile file) {
         super(file);

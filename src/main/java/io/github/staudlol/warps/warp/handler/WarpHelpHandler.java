@@ -59,7 +59,7 @@ public class WarpHelpHandler extends DefaultBukkitHelpHandler {
 
         if (!commandData.getArgumentUsage().equals("")) {
             builder
-                    .append("&a ")
+                    .append("&e ")
                     .append(commandData.getArgumentUsage());
 
         }
