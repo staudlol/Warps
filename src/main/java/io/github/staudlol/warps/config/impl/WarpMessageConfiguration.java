@@ -3,8 +3,8 @@ package io.github.staudlol.warps.config.impl;
 import io.github.nosequel.config.Configuration;
 import io.github.nosequel.config.ConfigurationFile;
 import io.github.nosequel.config.annotation.Configurable;
+import io.github.staudlol.warps.util.CC;
 import lombok.SneakyThrows;
-import org.bukkit.ChatColor;
 
 public class WarpMessageConfiguration extends Configuration {
 
@@ -15,19 +15,22 @@ public class WarpMessageConfiguration extends Configuration {
     public static Integer MONGO_PORT = 27017;
 
     @Configurable(path = "warp.already_exists")
-    public static String WARP_ALREADY_EXISTS = ChatColor.RED + "A warp with that name already exists.";
+    public static String WARP_ALREADY_EXISTS = CC.translate("&cA warp with that name already exists.");
 
     @Configurable(path = "warp.created")
-    public static String WARP_CREATED = ChatColor.GREEN + "You have created a new warp.";
+    public static String WARP_CREATED = CC.translate("&aYou have created a new warp");
 
     @Configurable(path = "warp.deleted")
-    public static String WARP_DELETED = ChatColor.RED + "You have deleted a warp.";
+    public static String WARP_DELETED = CC.translate("&cYou have deleted a warp");
 
     @Configurable(path = "warp.location")
-    public static String WARP_LOCATION = ChatColor.GREEN + "You have updated the location of a warp.";
+    public static String WARP_LOCATION = CC.translate("&aYou have updated the location of a warp.");
 
     @Configurable(path = "warp.teleport")
-    public static String WARP_TELEPORT = ChatColor.GREEN + "You have teleported to the warp.";
+    public static String WARP_TELEPORT = CC.translate("&aYou have teleported to the warp.");
+
+    @Configurable(path = "warp.permission")
+    public static String WARP_PERMISISON = CC.translate("&aYou have updated the permission of a warp");
 
     @SneakyThrows
     public WarpMessageConfiguration(ConfigurationFile file) {

@@ -6,20 +6,19 @@ import io.github.nosequel.command.annotation.Subcommand;
 import io.github.nosequel.command.bukkit.executor.BukkitCommandExecutor;
 import io.github.nosequel.command.exception.ConditionFailedException;
 import io.github.staudlol.warps.config.impl.WarpMessageConfiguration;
+import io.github.staudlol.warps.util.CC;
 import io.github.staudlol.warps.util.CommandExecutorUtil;
 import io.github.staudlol.warps.warp.Warp;
 import io.github.staudlol.warps.warp.WarpModule;
 import io.github.staudlol.warps.warp.menu.WarpsMenu;
 import lombok.RequiredArgsConstructor;
-import org.apache.commons.lang.StringUtils;
-import org.bukkit.ChatColor;
 
 @RequiredArgsConstructor
 public class WarpCommands {
 
     private final WarpModule warpModule;
 
-    @Command(label = "warps", permission = "warp.command.warps", userOnly = true)
+    @Command(label = "warps", userOnly = true)
     public void warps(BukkitCommandExecutor executor) {
         new WarpsMenu(executor.getPlayer(), this.warpModule).updateMenu();
     }
@@ -63,19 +62,30 @@ public class WarpCommands {
        this.warpModule.saveWarps(warp);
     }
 
-    @Subcommand(label = "info", parentLabel = "warp", permission = "warp.command.info", description = "Display the information of a warp", weight = 3)
-    public void info(BukkitCommandExecutor executor, Warp warp) {
+    @Subcommand(label = "setpermission", parentLabel = "warp", permission = "warp.command.setpermission", description = "Set the permission of a warp", weight = 3)
+    public void setPermission(BukkitCommandExecutor executor, Warp warp, String permission) {
+        warp.setPermission(permission);
+
+        executor.sendMessage(WarpMessageConfiguration.WARP_PERMISISON
+                .replace("%warp%", warp.getName()));
+
+        this.warpModule.saveWarps(warp);
+    }
+
+    @Subcommand(label = "info", parentLabel = "warp", permission = "warp.command.info", description = "Display the information of a warp", weight = 4)
+    public void information(BukkitCommandExecutor executor, Warp warp) {
         CommandExecutorUtil.sendMessage(executor, new String[] {
-                ChatColor.GRAY + ChatColor.STRIKETHROUGH.toString() + StringUtils.repeat("-", 52),
-                ChatColor.YELLOW + "Warp Information for " + ChatColor.GREEN + warp.getName(),
-                ChatColor.GRAY + "",
-                ChatColor.GREEN + "WorldName: " + ChatColor.YELLOW + warp.getWorldName(),
-                ChatColor.GREEN + "X: " + ChatColor.AQUA + warp.getX(),
-                ChatColor.GREEN + "Y: " + ChatColor.AQUA + warp.getY(),
-                ChatColor.GREEN + "Z: " + ChatColor.AQUA + warp.getZ(),
-                ChatColor.GREEN + "Pitch: " + ChatColor.AQUA + warp.getPitch(),
-                ChatColor.GREEN + "Yaw: " + ChatColor.AQUA + warp.getYaw(),
-                ChatColor.GRAY + ChatColor.STRIKETHROUGH.toString() + StringUtils.repeat("-", 52),
+                CC.translate("&7&m----------------------------------------------------"),
+                CC.translate("&eWarp Information for &a" + warp.getName()),
+                CC.translate(""),
+                CC.translate("&ePermission: &a" + warp.getPermission()),
+                CC.translate(""),
+                CC.translate("&aX: &b" + warp.getX()),
+                CC.translate("&aY: &b" + warp.getY()),
+                CC.translate("&aZ: &b" + warp.getZ()),
+                CC.translate("&aPitch: &b" + warp.getPitch()),
+                CC.translate("&aYaw: &b" + warp.getYaw()),
+                CC.translate("&7&m----------------------------------------------------"),
         });
     }
 }

@@ -10,6 +10,8 @@ public class Warp {
     private final String name;
     private String worldName;
 
+    private String permission = "";
+
     private int x;
     private int y;
     private int z;
