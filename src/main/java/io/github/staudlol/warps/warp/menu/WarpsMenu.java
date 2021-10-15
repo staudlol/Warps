@@ -13,8 +13,6 @@ import org.bukkit.DyeColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
-import org.bukkit.event.inventory.InventoryClickEvent;
-import java.util.function.Consumer;
 
 @Getter @Setter
 public class WarpsMenu extends PaginatedMenu {
@@ -44,35 +42,35 @@ public class WarpsMenu extends PaginatedMenu {
     @Override
     public void tick() {
         for (int i = 0; i < this.warpModule.getWarps().size(); i++) {
+
             final Warp warp = this.warpModule.getWarps().get(i);
             final Location location = warp.getSpawn();
 
             final boolean hasPermission = this.getPlayer().hasPermission(warp.getPermission());
             final String permission = warp.getPermission();
 
-            final String[] lore = new String[] {
-                    CC.translate("&7&m----------------------------------------------------"),
-                    CC.translate(""),
-                    CC.translate("&aClick to teleport to &3" + warp.getName()),
-                    CC.translate("&7&m----------------------------------------------------"),
-            };
-
-            final Consumer<InventoryClickEvent> action = type -> {
-                if (hasPermission) {
-                    if (permission == null) {
-                        this.getPlayer().sendMessage("");
-                    } else {
-                        this.getPlayer().teleport(location);
-                        this.getPlayer().sendMessage(WarpMessageConfiguration.WARP_TELEPORT
-                                .replace("warp%", warp.getName()));
-                    }
-                }
-            };
-
             this.buttons[i] = new Button(!hasPermission ? Material.REDSTONE_BLOCK : Material.EMERALD)
                     .setDisplayName(ChatColor.YELLOW + warp.getName())
-                    .setLore(lore)
-                    .setClickAction(action);
+                    .setLore(this.getWarpLore(warp))
+                    .setClickAction(event -> {
+                        event.setCancelled(true);
+                        if (hasPermission) {
+                            if (permission == null) {
+                            } else {
+                                this.getPlayer().teleport(location);
+                                this.getPlayer().sendMessage(WarpMessageConfiguration.WARP_TELEPORT
+                                        .replace("%warp%", warp.getName()));
+                            }
+                        }
+                    });
         }
+    }
+
+    private String[] getWarpLore(Warp warp) {
+        return new String[] {
+                CC.translate("&7&m----------------------------------------------------"),
+                CC.translate("&aClick to teleport to &3" + warp.getName()),
+                CC.translate("&7&m----------------------------------------------------"),
+        };
     }
 }

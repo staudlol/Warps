@@ -9,26 +9,37 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    mavenLocal()
+
+    maven {
+        url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+    }
+
     maven {
         url 'https://jitpack.io'
+    }
+
+    maven {
+        url 'https://repo.codemc.org/repository/maven-public/'
     }
 }
 
 dependencies {
-    compileOnly spigot('1.8.8')
+    compileOnly 'org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT'
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+
     implementation 'com.github.NoSequel:MenuAPI:832c770b4c'
 
-    implementation 'com.github.NoSequel.CommandAPI:shared:b47f0ee538'
-    implementation 'com.github.NoSequel.CommandAPI:bukkit:b47f0ee538'
+    implementation 'com.github.NoSequel.CommandAPI:shared:c3f21168be'
+    implementation 'com.github.NoSequel.CommandAPI:bukkit:c3f21168be'
 
     implementation 'com.github.NoSequel.ConfigAPI:shared:f2bb2d6772'
     implementation 'com.github.NoSequel.ConfigAPI:bukkit:f2bb2d6772'
 
-    implementation 'com.github.NoSequel.StorageORM:mongo:fa696f1db4'
-    implementation 'com.github.NoSequel.StorageORM:shared:fa696f1db4'
+    implementation 'com.github.NoSequel.StorageORM:mongo:7b77ab0f17'
+    implementation 'com.github.NoSequel.StorageORM:shared:7b77ab0f17'
 
-    compileOnly 'org.projectlombok:lombok:1.18.20'
-    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
 }
 
 spigot {

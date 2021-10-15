@@ -9,7 +9,7 @@ import lombok.SneakyThrows;
 public class WarpMessageConfiguration extends Configuration {
 
     @Configurable(path = "database.mongodb.hostname")
-    public static String MONGO_HOSTNAME = "";
+    public static String MONGO_HOSTNAME = "127.0.0.1";
 
     @Configurable(path = "database.mongodb.port")
     public static Integer MONGO_PORT = 27017;
