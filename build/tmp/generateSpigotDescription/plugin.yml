@@ -1,6 +1,3 @@
-main: io.github.staudlol.warps.WarpsPlugin
+main: io.github.staudlol.warps.WarpsSpigotPlugin
 name: Warps
 version: 1.0-SNAPSHOT
-description: Warps
-authors:
- - Staud

@@ -19,7 +19,7 @@ public class WarpTypeAdapter implements TypeAdapter<Warp> {
      * @return the converted object
      */
     @Override
-    public Warp convert(CommandExecutor executor, String source) throws Exception {
-        return this.warpModule.find(source);
+    public Warp convert(CommandExecutor executor, String source) {
+        return this.warpModule.findWarpByName(source);
     }
 }

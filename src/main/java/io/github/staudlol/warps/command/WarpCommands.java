@@ -25,13 +25,11 @@ public class WarpCommands {
 
     @Help
     @Command(label = "warp", permission = "warp.command.help", description = "Displays the help message")
-    public void help(BukkitCommandExecutor executor) {
-
-    }
+    public void help(BukkitCommandExecutor executor) {}
 
     @Subcommand(label = "create", parentLabel = "warp", permission = "warp.command.create", description = "Create a warp")
     public void create(BukkitCommandExecutor executor, String name) throws ConditionFailedException {
-        if (warpModule.find(name) != null) {
+        if (this.warpModule.findWarpByName(name) != null) {
             throw new ConditionFailedException(WarpMessageConfiguration.WARP_ALREADY_EXISTS);
         }
 
@@ -66,7 +64,7 @@ public class WarpCommands {
     public void setPermission(BukkitCommandExecutor executor, Warp warp, String permission) {
         warp.setPermission(permission);
 
-        executor.sendMessage(WarpMessageConfiguration.WARP_PERMISISON
+        executor.sendMessage(WarpMessageConfiguration.WARP_PERMISSION
                 .replace("%warp%", warp.getName()));
 
         this.warpModule.saveWarps(warp);
@@ -76,7 +74,7 @@ public class WarpCommands {
     public void information(BukkitCommandExecutor executor, Warp warp) {
         CommandExecutorUtil.sendMessage(executor, new String[] {
                 CC.translate("&7&m----------------------------------------------------"),
-                CC.translate("&eWarp Information for &a" + warp.getName()),
+                CC.translate("&eDisplaying information of &a" + warp.getName()),
                 CC.translate(""),
                 CC.translate("&ePermission: &a" + warp.getPermission()),
                 CC.translate(""),

@@ -7,46 +7,50 @@ plugins {
 group 'io.github.staudlol.warps'
 version '1.0-SNAPSHOT'
 
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
+
 repositories {
     mavenCentral()
-    mavenLocal()
 
     maven {
-        url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+        name = 'spigotmc-repo'
+        url = 'https://hub.spigotmc.org/nexus/content/groups/public'
     }
 
     maven {
-        url 'https://jitpack.io'
-    }
-
-    maven {
-        url 'https://repo.codemc.org/repository/maven-public/'
+        name = 'jitpack'
+        url = 'https://jitpack.io'
     }
 }
 
 dependencies {
-    compileOnly 'org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT'
-    compileOnly 'org.projectlombok:lombok:1.18.22'
+    compileOnly(
+            'org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT',
+            'org.projectlombok:lombok:1.18.22',
+    )
 
-    implementation 'com.github.NoSequel:MenuAPI:832c770b4c'
-
-    implementation 'com.github.NoSequel.CommandAPI:shared:c3f21168be'
-    implementation 'com.github.NoSequel.CommandAPI:bukkit:c3f21168be'
-
-    implementation 'com.github.NoSequel.ConfigAPI:shared:f2bb2d6772'
-    implementation 'com.github.NoSequel.ConfigAPI:bukkit:f2bb2d6772'
-
-    implementation 'com.github.NoSequel.StorageORM:mongo:7b77ab0f17'
-    implementation 'com.github.NoSequel.StorageORM:shared:7b77ab0f17'
+    implementation(
+            // I think I'm using NoSequel's API's. I really cant tell :)
+            'com.github.NoSequel:MenuAPI:a8560f4be7',
+            'com.github.NoSequel.CommandAPI:shared:c3f21168be',
+            'com.github.NoSequel.CommandAPI:bukkit:c3f21168be',
+            'com.github.NoSequel.ConfigAPI:shared:d87cae12d6',
+            'com.github.NoSequel.ConfigAPI:bukkit:d87cae12d6',
+            'com.github.NoSequel.StorageORM:shared:1142a5f51e',
+            'com.github.NoSequel.StorageORM:mongo:1142a5f51e'
+    )
 
     annotationProcessor 'org.projectlombok:lombok:1.18.22'
 }
 
-spigot {
-    authors 'Staud'
-    description =
-            'Warps'
+compileJava {
+    options.compilerArgs += ["-parameters"]
+    options.fork = true
+    options.forkOptions.executable = 'javac'
+}
+
+shadowJar {
+    archiveClassifier.set("")
 }
 
 tasks.build.dependsOn(shadowJar)
-tasks.prepareSpigotPlugins.dependsOn(shadowJar)

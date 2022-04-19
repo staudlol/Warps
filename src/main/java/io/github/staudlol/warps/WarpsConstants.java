@@ -1,8 +1,5 @@
 package io.github.staudlol.warps;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.LongSerializationPolicy;
 import io.github.nosequel.storage.mongo.MongoStorageHandler;
 import io.github.nosequel.storage.mongo.provider.MongoStorageProvider;
 import io.github.nosequel.storage.mongo.settings.impl.NoAuthMongoSettings;
@@ -12,10 +9,6 @@ import lombok.experimental.UtilityClass;
 
 @UtilityClass
 public class WarpsConstants {
-
-    public static final Gson GSON = new GsonBuilder()
-            .setPrettyPrinting().setLongSerializationPolicy(LongSerializationPolicy.STRING)
-            .create();
 
     private static final MongoStorageHandler STORAGE_HANDLER = new MongoStorageHandler(new NoAuthMongoSettings(WarpMessageConfiguration.MONGO_HOSTNAME, WarpMessageConfiguration.MONGO_PORT, "warps"));
     public static final MongoStorageProvider<Warp> WARP_STORAGE = createStorageProvider("warps", Warp.class);
@@ -33,8 +26,7 @@ public class WarpsConstants {
         return new MongoStorageProvider<>(
                 collectionName,
                 STORAGE_HANDLER,
-                clazz,
-                GSON
+                clazz
         );
     }
 }

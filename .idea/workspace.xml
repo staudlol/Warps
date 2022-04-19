@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="662f96fb-fd9e-4f18-b617-a7a107d8ffbb" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Warps.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Warps.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/io/github/staudlol/warps/WarpsConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/io/github/staudlol/warps/WarpsPlugin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/io/github/staudlol/warps/command/WarpCommands.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/io/github/staudlol/warps/config/WarpsConfigurationFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/io/github/staudlol/warps/config/impl/WarpMessageConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/io/github/staudlol/warps/module/Module.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/io/github/staudlol/warps/module/ModuleHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/io/github/staudlol/warps/util/CC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/io/github/staudlol/warps/util/CommandExecutorUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/io/github/staudlol/warps/warp/Warp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/io/github/staudlol/warps/warp/WarpModule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/io/github/staudlol/warps/warp/adapter/WarpTypeAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/io/github/staudlol/warps/warp/handler/WarpHelpHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/io/github/staudlol/warps/warp/menu/WarpsMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Warps-1.0-SNAPSHOT-all.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Warps-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/test/plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/spigradle/spigot_main" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/generateSpigotDescription/plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/shadowJar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/spigot/cache/mojang_1.16.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/spigot/eula.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/spigot/plugins/Warps-1.0-SNAPSHOT-all.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/spigot/server.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/staudlol/warps/WarpsConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/staudlol/warps/WarpsConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/staudlol/warps/WarpsPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/staudlol/warps/WarpsSpigotPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/staudlol/warps/command/WarpCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/staudlol/warps/command/WarpCommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/staudlol/warps/config/impl/WarpMessageConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/staudlol/warps/config/impl/WarpMessageConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/staudlol/warps/warp/WarpModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/staudlol/warps/warp/WarpModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/staudlol/warps/warp/adapter/WarpTypeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/staudlol/warps/warp/adapter/WarpTypeAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/staudlol/warps/warp/menu/WarpsMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/staudlol/warps/warp/menu/WarpsMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="27zpGmYaWYzTTOXPQMraGkshEzi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Gradle.warps [shadowJar]">
+    <configuration name="warps [clean]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="clean" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="warps [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="shadowJar" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="RunPaper" type="JarApplication">
+      <option name="JAR_PATH" value="C:\Users\Kyle\IdeaProjects\Warps\debug\spigot\server.jar" />
+      <option name="PROGRAM_PARAMETERS" value="nogui" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Kyle\IdeaProjects\Warps\debug\spigot" />
+      <method v="2">
+        <option name="Gradle.BeforeRunTask" enabled="true" tasks="acceptSpigotEula" externalProjectPath="$PROJECT_DIR$" />
+        <option name="Gradle.BeforeRunTask" enabled="true" tasks="downloadPaper" externalProjectPath="$PROJECT_DIR$" />
+        <option name="Gradle.BeforeRunTask" enabled="true" tasks="prepareSpigotPlugins" externalProjectPath="$PROJECT_DIR$" />
+      </method>
+    </configuration>
+    <configuration name="RunSpigot" type="JarApplication">
+      <option name="JAR_PATH" value="C:\Users\Kyle\IdeaProjects\Warps\debug\spigot\server.jar" />
+      <option name="PROGRAM_PARAMETERS" value="nogui" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Kyle\IdeaProjects\Warps\debug\spigot" />
+      <method v="2">
+        <option name="Gradle.BeforeRunTask" enabled="true" tasks="acceptSpigotEula" externalProjectPath="$PROJECT_DIR$" />
+        <option name="Gradle.BeforeRunTask" enabled="true" tasks="prepareSpigotPlugins" externalProjectPath="$PROJECT_DIR$" />
+        <option name="Gradle.BeforeRunTask" enabled="true" tasks="prepareSpigot" externalProjectPath="$PROJECT_DIR$" />
+      </method>
+    </configuration>
+    <configuration name="RemoteSpigot" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.warps [clean]" />
+      <item itemvalue="Gradle.warps [shadowJar]" />
+      <item itemvalue="Remote JVM Debug.RemoteSpigot" />
+      <item itemvalue="JAR Application.RunPaper" />
+      <item itemvalue="JAR Application.RunSpigot" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="662f96fb-fd9e-4f18-b617-a7a107d8ffbb" name="Changes" comment="" />
+      <created>1650332688438</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650332688438</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

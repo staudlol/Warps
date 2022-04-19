@@ -62,13 +62,13 @@ public class WarpModule implements Module {
     }
 
     /**
-     * Find a {@link Warp} by a name.
+     * Find a {@link Warp} by a {@link String}
      *
      * @param name the name.
      * @return the found warp or null.
      */
 
-    public Warp find(String name) {
+    public Warp findWarpByName(String name) {
         return this.warps.stream()
                 .filter(warp -> warp.getName().equalsIgnoreCase(name))
                 .findFirst().orElse(null);

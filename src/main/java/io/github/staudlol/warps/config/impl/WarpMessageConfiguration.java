@@ -30,7 +30,7 @@ public class WarpMessageConfiguration extends Configuration {
     public static String WARP_TELEPORT = CC.translate("&aYou have teleported to the warp.");
 
     @Configurable(path = "warp.permission")
-    public static String WARP_PERMISISON = CC.translate("&aYou have updated the permission of a warp");
+    public static String WARP_PERMISSION = CC.translate("&aYou have updated the permission of a warp");
 
     @SneakyThrows
     public WarpMessageConfiguration(ConfigurationFile file) {
